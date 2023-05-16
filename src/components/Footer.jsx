@@ -9,7 +9,8 @@ export default function Footer () {
     const result1 = new Intl.DateTimeFormat('en-US', { weekday: 'long'}).format(date);
 
     return <div className='footer'>
-        <h3>Samuel Wachira</h3>
+        <p> &copy; 2023 Samuel</p>
+        {/* <h3>Samuel Wachira</h3> */}
     {`${date.toLocaleDateString()} ${result1}`}
     </div>
 }
