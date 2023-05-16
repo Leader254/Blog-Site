@@ -34,7 +34,7 @@ export default function Blogs() {
   return (
     <>
     <h2>Samuel Wachira Blogs & Articles</h2>
-    <div className='main-div'>
+    {/* <div className='main-div'>
       {blogs.map((blog) => (
         <div className="blog" key={blog.id}>
           <div className="blog-title">
@@ -46,6 +46,30 @@ export default function Blogs() {
           </div>
         </div>
       ))}
+    </div> */}
+    <div className="main-div">
+        <div className="main-content">
+            {
+                blogs.map((blog,index) =>{
+                    return(
+                        <div className="blog" key={index}>
+                            <h3>{blog.title}</h3>
+                            <p>{blog.content}</p>
+                            <h4>{blog.author}</h4>
+                        </div>
+                    )
+                })
+            }
+        </div>
+        <div className="main-aside">
+          <h2>Highlights</h2>
+          <div className="blog-title">
+          {blogs.map((blog, index) => (
+            <div key={index}><h4>{blog.content}</h4></div>
+          ))}
+          </div>
+          
+        </div>
     </div>
     </>
   );
