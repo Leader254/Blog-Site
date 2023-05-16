@@ -10,9 +10,12 @@
     width: 85%;
    }
    .blog{
-    border-bottom: 1px solid rgb(2, 2, 2) ;
-    border-radius: 10px;
+    border: 1px solid rgb(2, 2, 2) ;
+    border-radius: 5px;
     margin: auto 20px;
+    margin-top: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
     /* align-items: left; */
     text-align: left;
    }
@@ -30,7 +33,7 @@
    }
    .blog-title h4{
     padding: 20px;
-    border: 1px solid rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(0, 0, 0);
     border-radius: 10px;
     margin: 10px;
    }

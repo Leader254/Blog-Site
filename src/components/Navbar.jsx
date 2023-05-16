@@ -1,6 +1,8 @@
 function Navbar() {
   return (
-    <div></div>
+    <div>
+        <h1>Blogs Site</h1>
+    </div>
   )
 }
 
