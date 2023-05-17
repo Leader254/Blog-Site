@@ -7,6 +7,9 @@
     margin-left: 30px;
     color: black;
     border-radius: 20px;
+    box-shadow: 6px 8px 19px -8px rgba(0,0,0,0.37) inset;
+-webkit-box-shadow: 6px 8px 19px -8px rgba(0,0,0,0.37) inset;
+-moz-box-shadow: 6px 8px 19px -8px rgba(0,0,0,0.37) inset;
     width: 85%;
    }
    .blog{
@@ -16,6 +19,9 @@
     margin-top: 20px;
     padding: 10px;
     margin-bottom: 20px;
+    box-shadow: 6px 8px 19px -8px rgba(0,0,0,1);
+-webkit-box-shadow: 6px 8px 19px -8px rgba(0,0,0,1);
+-moz-box-shadow: 6px 8px 19px -8px rgba(0,0,0,1);
     /* align-items: left; */
     text-align: left;
    }
@@ -36,8 +42,18 @@
     border-bottom: 1px solid rgb(0, 0, 0);
     border-radius: 10px;
     margin: 10px;
+    
    }
    .main-aside h2{
     text-align: center;
     text-decoration: underline;
+   }
+   .btn{
+      background-color: rgb(100, 86, 86);
+      color: white;
+      border-radius: 10px;
+      padding: 10px;
+      margin: 10px;
+      border: none;
+      cursor: pointer;
    }

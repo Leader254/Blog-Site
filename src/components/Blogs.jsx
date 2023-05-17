@@ -44,7 +44,7 @@ export default function Blogs() {
                 blogs.map((blog,index) =>{
                     return(
                         <div className="blog" key={index}>
-                            <h3>{blog.title}</h3>
+                            <h2>{blog.title}</h2>
                             <p>{blog.content}</p>
                             <h4>{blog.author}</h4>
                         </div>
@@ -59,7 +59,7 @@ export default function Blogs() {
             <div key={index}><h4>{blog.summary}</h4></div>
           ))}
           </div>
-          <button disabled>Read More</button>
+          <button className='btn'>Read More</button>
         </div>
     </div>
     </>
