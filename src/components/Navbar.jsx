@@ -1,6 +1,7 @@
+import './Navbar.css'
 function Navbar() {
   return (
-    <div>
+    <div className='title'>
         <h1>Articles & Blogs</h1>
     </div>
   )

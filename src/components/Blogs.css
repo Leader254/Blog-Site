@@ -12,19 +12,18 @@
 -moz-box-shadow: 6px 8px 19px -8px rgba(0,0,0,0.37) inset;
     width: 85%;
    }
-   .blog{
-    border: 1px solid rgb(2, 2, 2) ;
-    border-radius: 5px;
-    margin: auto 20px;
-    margin-top: 20px;
-    padding: 10px;
-    margin-bottom: 20px;
-    box-shadow: 6px 8px 19px -8px rgba(0,0,0,1);
--webkit-box-shadow: 6px 8px 19px -8px rgba(0,0,0,1);
--moz-box-shadow: 6px 8px 19px -8px rgba(0,0,0,1);
-    /* align-items: left; */
-    text-align: left;
-   }
+   .blog {
+      border: 1px solid rgb(2, 2, 2);
+      border-radius: 5px;
+      margin: auto 20px;
+      margin-top: 20px;
+      padding: 10px;
+      margin-bottom: 20px;
+      box-shadow: 6px 8px 19px -8px rgba(0, 0, 0, 1);
+      -webkit-box-shadow: 6px 8px 19px -8px rgba(0, 0, 0, 1);
+      -moz-box-shadow: 6px 8px 19px -8px rgba(0, 0, 0, 1);
+      text-align: left;
+    }
    .blog h4{
     font-style: italic;
    }
@@ -48,7 +47,7 @@
     text-align: center;
     text-decoration: underline;
    }
-   .btn{
+   .btn {
       background-color: rgb(100, 86, 86);
       color: white;
       border-radius: 10px;
@@ -56,4 +55,11 @@
       margin: 10px;
       border: none;
       cursor: pointer;
-   }
+      transition: all 0.3s ease; /* Added transition property for smooth animation */
+    }
+    
+    .btn:hover {
+      background-color: rgb(150, 136, 136); /* New background color on hover */
+      transform: scale(1.1); /* Increase size on hover */
+    }
+    
