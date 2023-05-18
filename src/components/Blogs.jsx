@@ -2,6 +2,7 @@
 // // creating a personal blog page
 import React from 'react';
 import './Blogs.css';
+import { Link } from 'react-router-dom';
 
 export default function Blogs() {
   const blogs = [
@@ -37,31 +38,33 @@ export default function Blogs() {
 
   return (
     <>
-    {/* <h2>Blogs Site</h2> */}
-    <div className="main-div">
+      <div className="main-div">
         <div className="main-content">
-            {
-                blogs.map((blog,index) =>{
-                    return(
-                        <div className="blog" key={index}>
-                            <h2>{blog.title}</h2>
-                            <p>{blog.content}</p>
-                            <h4>{blog.author}</h4>
-                        </div>
-                    )
-                })
-            }
+          {blogs.map((blog, index) => {
+            return (
+              <div className="blog" key={index}>
+                <h2>{blog.title}</h2>
+                <p>{blog.content}</p>
+                <h4>{blog.author}</h4>
+                <Link className='link' to={"https://en.wikipedia.org/wiki/List_of_important_publications_in_computer_science"}>
+                  Read More
+                </Link>
+              </div>
+            );
+          })}
         </div>
         <div className="main-aside">
           <h2>Highlights</h2>
           <div className="blog-title">
-          {blogs.map((blog, index) => (
-            <div key={index}><h4>{blog.summary}</h4></div>
-          ))}
+            {blogs.map((blog, index) => (
+              <div key={index}>
+                <h4>{blog.summary}</h4>
+              </div>
+            ))}
           </div>
           <button className='btn'>Read More</button>
         </div>
-    </div>
+      </div>
     </>
   );
 }

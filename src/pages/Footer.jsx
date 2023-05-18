@@ -10,7 +10,6 @@ export default function Footer () {
 
     return <div className='footer'>
         <p> &copy; 2023 Samuel</p>
-        {/* <h3>Samuel Wachira</h3> */}
     {`${date.toLocaleDateString()} ${result1}`}
     </div>
 }
